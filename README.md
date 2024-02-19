@@ -88,12 +88,16 @@ Then, create an AWS instance and associate it with a key pair, security group, V
 |depends_on|[aws_s3_bucket.BucketByTF]|
 
 Initialize the Terraform working directory to download necessary plugins and modules.
--terraform init
+
+•	terraform init
 
 Generate an execution plan to review the changes Terraform will make.
--terraform plan
+
+•	terraform plan
 
 Apply the Terraform configuration to create the AWS resources.
--terraform apply
+
+•	terraform apply
+
 
 
