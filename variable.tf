@@ -24,3 +24,30 @@ variable "region" {
   description = "name of region"
   type = string
 }
+
+variable "vpc_name" {
+  description = "name of vpc"
+  type = string
+  
+}
+
+variable "subnet_name" {
+  description = "namwe of subnet"
+  type = string
+}
+
+variable "internet_gateway_name" {
+  description = "name of internet gateway"
+  type = string
+}
+
+variable "route_table_name" {
+  description = "name of the route table"
+  type = string
+}
+
+variable "security_group_name" {
+  description = "name of the srcurity group"
+  type = string
+  
+}

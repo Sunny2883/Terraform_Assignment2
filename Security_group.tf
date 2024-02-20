@@ -1,7 +1,7 @@
 
 resource "aws_security_group" "SecurityGroupAssignement2TF" {
     description = "Allow HTTP (port 80) and SSH (port 22) ingress traffic"
-  name = "SecurityGroupAssignement2TF"
+  name = var.security_group_name
   vpc_id = aws_vpc.VPCTF.id
   ingress {
     from_port   = 80

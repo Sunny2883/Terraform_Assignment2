@@ -5,7 +5,7 @@ resource "aws_vpc" "VPCTF" {
   instance_tenancy = "default"
 
   tags = {
-    Name = "VPCTF"
+    Name = var.vpc_name
   }
 }
 
@@ -15,7 +15,7 @@ resource "aws_subnet" "subnetTF" {
   availability_zone = "ap-south-1a"
   
   tags = {
-    Name="subnetTF"
+    Name=var.subnet_name
   }
 
 }
@@ -24,7 +24,7 @@ resource "aws_internet_gateway" "gwTF" {
   vpc_id = aws_vpc.VPCTF.id
 
   tags = {
-    Name = "gwTF"
+    Name = var.internet_gateway_name
   }
 }
 resource "aws_route_table" "RouteTableAssignment2TF" {
@@ -38,7 +38,7 @@ resource "aws_route_table" "RouteTableAssignment2TF" {
 
 
   tags = {
-    Name = "routeTF"
+    Name = var.route_table_name
   }
 }
 
