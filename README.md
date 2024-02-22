@@ -1,3 +1,22 @@
+                Terraform with Variables and Dependencies
+
+Objective: Create a Terraform configuration that uses variables and demonstrates the dependency between two services.
+
+Description:
+
+This assignment involves creating a Terraform configuration to provision two AWS resources: an S3 bucket and an EC2 instance. The configuration will utilize Terraform variables to parameterize settings such as the S3 bucket name. Additionally, the EC2 instance will be set to depend on the S3 bucket, ensuring proper resource sequencing during provisioning.
+
+Overview:
+
+The Terraform configuration defines the infrastructure resources needed for the assignment, including an S3 bucket and an EC2 instance.
+
+Terraform variables are employed to parameterize the configuration, facilitating easy customization of settings such as the S3 bucket name.
+
+Resource dependencies are established within the configuration, ensuring that the EC2 instance is provisioned only after the S3 bucket creation is successfully completed.
+
+To utilize the configuration, users can modify the Terraform variables according to their requirements and execute the standard Terraform workflow, including initialization, planning, and applying the configuration.
+
+
 Requirements -• Terraform v1.7.3 installed on Windows_amd64.
 ![terraform version](./Images/image.png)
 
