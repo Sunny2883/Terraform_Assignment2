@@ -20,6 +20,10 @@ To utilize the configuration, users can modify the Terraform variables according
 Requirements -• Terraform v1.7.3 installed on Windows_amd64.
 ![terraform version](./Images/image.png)
 
+|Resource|Version|
+|--|--|
+|terraform|v1.7.3|
+
 Create a new directory for your Terraform assignment.
 -	mkdir Terraform assignment2
 -	cd Terraform assignment2
