@@ -1,5 +1,6 @@
 Requirements -• Terraform v1.7.3 installed on Windows_amd64.
 ![terraform version](./Images/image.png)
+
 Create a new directory for your Terraform assignment.
 -	mkdir Terraform assignment2
 -	cd Terraform assignment2
@@ -93,13 +94,49 @@ Initialize the Terraform working directory to download necessary plugins and mod
 
 •	terraform init
 
+terraform init:
+
+Purpose: Initialize a Terraform project in a directory.
+
+Usage: Run terraform init in the root directory of your Terraform configuration files.
+Functionality: Downloads necessary plugins and modules specified in the configuration files. Sets up the working directory and prepares it for Terraform's use.
+
+Example Usage: Use terraform init to initialize the Terraform environment before starting any infrastructure provisioning or management tasks.
+
 Generate an execution plan to review the changes Terraform will make.
 
+![Terraform init command](./Images/image7.png)
+
 •	terraform plan
+
+Purpose: Generate an execution plan for changes to the infrastructure.
+
+Usage: Run terraform plan after initializing the Terraform project.
+
+Functionality: Analyzes the current state of the infrastructure and compares it to the desired state specified in the configuration files. Provides a preview of the actions Terraform will take to achieve the desired state.
+
+![Terraform aplly command](./Images/image-1.png)
 
 Apply the Terraform configuration to create the AWS resources.
 
 •	terraform apply
 
+Purpose: Apply changes to the infrastructure according to the Terraform configuration.
 
+Usage: Run terraform apply after reviewing the execution plan.
+
+Functionality: Executes the planned actions generated during the planning phase. Creates, modifies, or deletes resources as specified in the configuration files. Updates the Terraform state file to reflect the changes made to the infrastructure.
+
+Example Usage: Apply the changes to the infrastructure by running terraform apply after confirming the execution plan.
+
+![Terraform apply command](./Images/image-2.png)
+
+final output:
+![Instance output](./Iamges/image-3.png)
+
+![VPC ](./Images/image-4.png)
+
+![security group](./Images/image-5.png)
+
+![Key pair](./Images/image-6.png)
 

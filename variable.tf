@@ -20,10 +20,7 @@ variable "instance_type" {
   
 }
 
-variable "region" {
-  description = "name of region"
-  type = string
-}
+
 
 variable "vpc_name" {
   description = "name of vpc"
