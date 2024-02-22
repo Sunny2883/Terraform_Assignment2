@@ -1,5 +1,5 @@
 Requirements -• Terraform v1.7.3 installed on Windows_amd64.
-![terraform version]./images/(image.png)
+![terraform version](./Images/image.png)
 Create a new directory for your Terraform assignment.
 -	mkdir Terraform assignment2
 -	cd Terraform assignment2
