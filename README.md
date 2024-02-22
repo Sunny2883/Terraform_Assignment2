@@ -1,4 +1,4 @@
-                Terraform with Variables and Dependencies
+*** Terraform with Variables and Dependencies ***
 
 Objective: Create a Terraform configuration that uses variables and demonstrates the dependency between two services.
 
@@ -18,6 +18,9 @@ To utilize the configuration, users can modify the Terraform variables according
 
 
 Requirements -• Terraform v1.7.3 installed on Windows_amd64.
+
+             terraform --version
+
 ![terraform version](./Images/image.png)
 
 |Resource|Version|
@@ -25,8 +28,8 @@ Requirements -• Terraform v1.7.3 installed on Windows_amd64.
 |terraform|v1.7.3|
 
 Create a new directory for your Terraform assignment.
--	mkdir Terraform assignment2
--	cd Terraform assignment2
+    	     mkdir Terraform assignment2
+    	     cd Terraform assignment2
 
 Create a variables.tf file to define Terraform variables.
 |Variable name|Type|
@@ -115,7 +118,7 @@ Then, create an AWS instance and associate it with a key pair, security group, V
 
 Initialize the Terraform working directory to download necessary plugins and modules.
 
-•	terraform init
+	             terraform init
 
 terraform init:
 
@@ -130,7 +133,7 @@ Generate an execution plan to review the changes Terraform will make.
 
 ![Terraform init command](./Images/image7.png)
 
-•	terraform plan
+	             terraform plan
 
 Purpose: Generate an execution plan for changes to the infrastructure.
 
@@ -142,7 +145,7 @@ Functionality: Analyzes the current state of the infrastructure and compares it 
 
 Apply the Terraform configuration to create the AWS resources.
 
-•	terraform apply
+	             terraform apply
 
 Purpose: Apply changes to the infrastructure according to the Terraform configuration.
 
